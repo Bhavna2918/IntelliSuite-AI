@@ -27,7 +27,7 @@ if(plan!=='premium'&& free_usage>=10){
         }
 
    const response = await AI.chat.completions.create({
-    model: "llama3-8b-8192",
+    model: "openai/gpt-oss-20b",
     messages: [
         {
             role: "user",
@@ -73,7 +73,7 @@ if(plan!=='premium'&& free_usage>=10){
         }
 
 const response = await AI.chat.completions.create({
-    model: "llama3-8b-8192",
+    model: "openai/gpt-oss-20b",
     messages: [
         {
             role: "user",
@@ -284,7 +284,7 @@ ${pdfData.text}${jdContext}`;
 
 
  const response = await AI.chat.completions.create({
-    model: "llama3-8b-8192",
+    model: "openai/gpt-oss-20b",
     messages: [
         {
             role: "system",
@@ -329,7 +329,7 @@ export const generateChat = async (req, res) => {
         }
 
         const response = await AI.chat.completions.create({
-            model: "llama3-8b-8192",
+            model: "openai/gpt-oss-20b",
             messages: [
                 { role: "system", content: "You are an AI assistant for IntelliSuite AI. Provide helpful, concise, and accurate responses." },
                 ...messages
@@ -366,7 +366,7 @@ export const generateCode = async (req, res) => {
         }
 
         const response = await AI.chat.completions.create({
-            model: "llama3-8b-8192",
+            model: "openai/gpt-oss-20b",
             messages: [
                 { role: "system", content: "You are an expert software developer. Provide code solutions to the user's prompt. Always format your code in markdown code blocks." },
                 { role: "user", content: prompt }
@@ -418,7 +418,7 @@ export const summarizePdf = async (req, res) => {
         const prompt = `Please provide a comprehensive summary of the following document. Extract the key points, main arguments, and any critical conclusions. Format the response beautifully using Markdown with clear headings and bullet points.\n\nDocument Content:\n${pdfData.text}`;
 
         const response = await AI.chat.completions.create({
-            model: "llama3-8b-8192",
+            model: "openai/gpt-oss-20b",
             messages: [
                 { role: "system", content: "You are an expert document analyzer. Provide clear, structured, and accurate summaries." },
                 { role: "user", content: prompt }
