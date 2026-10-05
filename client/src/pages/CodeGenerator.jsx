@@ -62,7 +62,7 @@ const CodeGenerator = () => {
   };
 
   return (
-    <div className='h-[calc(100vh-140px)] flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto text-app-text transition-colors'>
+    <div className='min-min-h-[calc(100vh-140px)] lg:h-[calc(100vh-140px)] lg:min-h-[calc(100vh-140px)] lg:h-[calc(100vh-140px)] flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto text-app-text transition-colors'>
         {/* col left */}
         <Card isForm onSubmit={handleGenerate} className='w-full lg:w-[35%] shrink-0 h-full flex flex-col overflow-y-auto custom-scrollbar'>
             <PageHeader icon={Code} title="Code Generator" description="Write and refactor code instantly" className="shrink-0" />

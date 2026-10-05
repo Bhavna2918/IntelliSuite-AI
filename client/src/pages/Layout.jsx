@@ -30,10 +30,17 @@ const Layout = () => {
 
   return user ? (
     <div className='flex h-screen w-full bg-app-bg text-app-text overflow-hidden transition-colors'>
+        {/* Mobile sidebar overlay mask */}
+        {sidebar && (
+          <div 
+            className="fixed inset-0 bg-black/50 z-30 sm:hidden backdrop-blur-sm"
+            onClick={() => setSidebar(false)}
+          />
+        )}
         <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>
         
         <div className='flex-1 flex flex-col h-screen relative min-w-0 bg-app-bg transition-colors'>
-            <nav className='w-full px-8 min-h-[72px] flex items-center justify-between bg-app-bg/50 backdrop-blur-xl border-b border-app-border z-30 transition-colors'>
+            <nav className='w-full px-4 md:px-8 min-h-[72px] flex items-center justify-between bg-app-bg/50 backdrop-blur-xl border-b border-app-border z-30 transition-colors'>
                 <div className='flex items-center gap-4 flex-1'>
                     {
                         sidebar ? <X onClick={()=>setSidebar(false)} className='w-6 h-6 text-app-text sm:hidden cursor-pointer'/>
@@ -58,6 +65,9 @@ const Layout = () => {
                 <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
 
                 <div className='flex items-center gap-6 ml-4'>
+                    <button type="button" onClick={() => setIsSearchOpen(true)} className='md:hidden text-app-text-sec hover:text-app-text transition-colors'>
+                        <Search className='w-4 h-4' />
+                    </button>
                     <button type="button" onClick={toggleTheme} className='text-app-text-sec hover:text-app-text transition-colors'>
                         {theme === 'dark' ? <Sun className='w-4 h-4' /> : <Moon className='w-4 h-4' />}
                     </button>
@@ -82,7 +92,7 @@ const Layout = () => {
                     </div>
                 </div>
             </nav>
-            <div className='flex-1 overflow-y-auto custom-scrollbar relative z-10 p-8'>
+            <div className='flex-1 overflow-y-auto custom-scrollbar relative z-10 p-4 sm:p-6 md:p-8'>
                 <Outlet />
             </div>
         </div>
@@ -96,7 +106,7 @@ const Layout = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className='relative z-10 p-8 glass-card border border-app-border'
+                className='relative z-10 p-4 sm:p-8 glass-card border border-app-border mx-4 sm:mx-0'
             >
                 <SignIn appearance={{
                     variables: {

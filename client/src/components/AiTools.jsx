@@ -76,7 +76,7 @@ const AiTools = () => {
     };
 
   return (
-    <div className='px-6 sm:px-20 xl:px-32 my-24 relative bg-app-bg'>
+    <div className='px-4 sm:px-10 lg:px-20 xl:px-32 my-24 relative bg-app-bg'>
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

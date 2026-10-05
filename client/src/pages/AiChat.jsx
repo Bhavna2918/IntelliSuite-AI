@@ -52,7 +52,7 @@ const AiChat = () => {
   };
 
   return (
-    <div className='flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto h-[calc(100vh-140px)] text-app-text transition-colors'>
+    <div className='min-min-h-[calc(100vh-140px)] lg:h-[calc(100vh-140px)] lg:min-h-[calc(100vh-140px)] lg:h-[calc(100vh-140px)] flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto text-app-text transition-colors'>
       {/* Left Column - Configuration */}
       <Card className='w-full lg:w-[35%] shrink-0 h-full overflow-y-auto custom-scrollbar'>
         <PageHeader icon={Settings2} title="Chat Settings" />

@@ -56,8 +56,7 @@ const Plan = () => {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.8 }}
-      className='max-w-6xl mx-auto z-20 my-30 relative px-6 lg:px-8'
+      className='max-w-6xl mx-auto z-20 my-30 relative px-4 sm:px-10 lg:px-8'
     >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 

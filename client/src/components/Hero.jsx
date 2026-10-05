@@ -20,7 +20,7 @@ const Hero = () => {
     };
 
   return (
-    <div className='relative pt-32 pb-20 px-6 sm:px-20 xl:px-32 w-full min-h-screen flex flex-col lg:flex-row items-center justify-center overflow-hidden bg-app-bg'>
+    <div className='relative pt-32 pb-20 px-4 sm:px-10 lg:px-20 xl:px-32 w-full min-h-screen flex flex-col lg:flex-row items-center justify-center overflow-hidden bg-app-bg'>
         
         <motion.div 
           variants={containerVariants}
@@ -32,13 +32,13 @@ const Hero = () => {
               The Next Generation of AI
             </motion.div>
             
-            <motion.h1 variants={itemVariants} className='text-5xl sm:text-6xl md:text-[5.5rem] font-bold leading-[1.1] text-app-text'>
+            <motion.h1 variants={itemVariants} className='text-4xl sm:text-5xl md:text-[5.5rem] font-bold leading-[1.1] text-app-text'>
               One Platform.<br/>
               Every <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#60A5FA] to-[#A78BFA]'>AI Tool</span><br/>
               You Need.
             </motion.h1>
             
-             <motion.p variants={itemVariants} className='text-base max-w-xl text-app-text-sec font-normal leading-relaxed mt-2'>
+             <motion.p variants={itemVariants} className='text-sm sm:text-base max-w-xl text-app-text-sec font-normal leading-relaxed mt-2'>
               Generate content, analyze resumes with <span className="text-blue-400 font-semibold">ATS scoring</span>, <span className="text-fuchsia-400 font-semibold">chat with AI</span>, create images, summarize documents, and boost <span className="text-blue-500 font-semibold">productivity</span> from a single intelligent platform.
              </motion.p>
 

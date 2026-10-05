@@ -24,7 +24,7 @@ export const ResultPanel = ({
 
   return (
     <Card className='h-full overflow-hidden flex flex-col p-0 sm:p-0'>
-      <div className='p-6 sm:p-8 flex-1 flex flex-col h-full'>
+      <div className='p-5 sm:p-8 flex-1 flex flex-col h-full'>
         <div className="flex items-center justify-between mb-6 shrink-0">
           <PageHeader icon={icon} title={title} className="mb-0" />
           

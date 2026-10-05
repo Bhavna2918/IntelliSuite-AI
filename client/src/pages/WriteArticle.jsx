@@ -45,7 +45,7 @@ const WriteArticle = () => {
   };
 
   return (
-    <div className='flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto h-[calc(100vh-140px)] text-app-text transition-colors'>
+    <div className='flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto min-h-[calc(100vh-140px)] lg:h-[calc(100vh-140px)] text-app-text transition-colors'>
         {/* Left Column - Configuration */}
         <Card isForm onSubmit={onSubmitHandler} className='w-full lg:w-[35%] shrink-0 h-full overflow-y-auto custom-scrollbar'>
             <PageHeader icon={Sparkles} title="Article Configuration" />

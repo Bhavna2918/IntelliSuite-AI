@@ -54,7 +54,7 @@ const SearchModal = ({ isOpen, onClose }) => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
             transition={{ duration: 0.15 }}
-            className="fixed top-[15vh] left-1/2 -translate-x-1/2 w-full max-w-2xl bg-app-card border border-app-border shadow-2xl rounded-2xl z-[60] overflow-hidden flex flex-col max-h-[70vh]"
+            className="fixed top-[15vh] left-1/2 -translate-x-1/2 w-[92%] sm:w-[95%] max-w-2xl bg-app-card border border-app-border shadow-2xl rounded-2xl z-[60] overflow-hidden flex flex-col max-h-[70vh]"
           >
             <div className="flex items-center gap-3 p-4 border-b border-app-border bg-app-bg/50">
               <Search className="w-5 h-5 text-app-text-sec shrink-0" />

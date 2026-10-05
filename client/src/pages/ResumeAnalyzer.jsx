@@ -125,7 +125,7 @@ const ReviewResume = () => {
   };
 
   return (
-     <div className='h-[calc(100vh-140px)] flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto text-app-text transition-colors'>
+     <div className='min-h-[calc(100vh-140px)] lg:h-[calc(100vh-140px)] flex flex-col lg:flex-row gap-6 max-w-[1400px] mx-auto text-app-text transition-colors'>
           {/* col left - Input Form */}
           <Card isForm onSubmit={onsubmithandler} className='w-full lg:w-[35%] shrink-0 h-full overflow-y-auto custom-scrollbar flex flex-col'>
               <PageHeader icon={FileText} title="Resume Review" />

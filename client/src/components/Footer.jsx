@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 pt-16 pb-8 w-full text-app-text-sec mt-20 border-t border-app-border bg-app-bg relative overflow-hidden transition-colors">
+    <footer className="px-4 sm:px-10 md:px-16 lg:px-24 xl:px-32 pt-16 pb-8 w-full text-app-text-sec mt-20 border-t border-app-border bg-app-bg relative overflow-hidden transition-colors">
         
     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
@@ -31,10 +31,10 @@ const Footer = () => {
                 <h2 className="font-semibold text-app-text mb-6 tracking-wide uppercase text-sm">Subscribe</h2>
                 <div className="text-sm space-y-4">
                     <p className='max-w-[200px] text-app-text-sec'>The latest news, articles, and resources, sent to your inbox weekly.</p>
-                    <div className="flex items-center gap-2 pt-2">
-                        <input className="bg-app-card border border-app-border placeholder-app-placeholder focus:border-primary/50 outline-none w-full max-w-64 h-10 rounded-lg px-3 transition-colors text-app-text" type="email" 
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-2">
+                        <input className="bg-app-card border border-app-border placeholder-app-placeholder focus:border-primary/50 outline-none w-full sm:max-w-64 h-10 rounded-lg px-3 transition-colors text-app-text" type="email" 
                         placeholder="Enter your email"/>
-                        <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition-opacity w-24 h-10 text-white font-semibold rounded-lg cursor-pointer">Subscribe</button>
+                        <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition-opacity w-full sm:w-24 h-10 text-white font-semibold rounded-lg cursor-pointer">Subscribe</button>
                     </div>
                 </div>
             </div>
