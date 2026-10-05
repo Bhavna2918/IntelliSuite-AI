@@ -15,6 +15,9 @@ const ClerkWithTheme = ({ publishableKey }) => {
         baseTheme: theme === 'dark' ? dark : undefined,
         variables: {
           colorPrimary: '#3B82F6', // Using the blue accent from our premium theme
+        },
+        elements: {
+          modalContent: "scale-90 transform origin-center shadow-[0_0_50px_rgba(0,0,0,0.2)] rounded-2xl"
         }
       }}
     >
