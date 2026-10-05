@@ -85,8 +85,8 @@ const AiTools = () => {
           transition={{ duration: 0.6 }}
           className='text-center relative z-10'
         >
-            <h2 className='text-white text-4xl sm:text-5xl font-bold tracking-tight'>Powerful <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400'>AI Tools</span></h2>
-            <p className='text-text-secondary max-w-2xl mx-auto mt-4 text-lg'>Everything you need to create, enhance, and optimize your content with cutting-edge AI technology.</p>
+            <h2 className='text-app-text text-4xl sm:text-5xl font-bold tracking-tight'>Powerful <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400'>AI Tools</span></h2>
+            <p className='text-app-text-sec max-w-2xl mx-auto mt-4 text-lg'>Everything you need to create, enhance, and optimize your content with cutting-edge AI technology.</p>
         </motion.div>
 
         <motion.div 
@@ -107,8 +107,8 @@ const AiTools = () => {
                   <div className='w-14 h-14 rounded-2xl mb-6 flex items-center justify-center' style={{backgroundColor: tool.bg.glow}}>
                     <tool.Icon className='w-7 h-7' style={{color: tool.bg.from}} />
                   </div>
-                  <h3 className='mb-3 text-xl font-bold text-white'>{tool.title}</h3>
-                  <p className='text-text-secondary text-sm leading-relaxed'>{tool.description}</p>
+                  <h3 className='mb-3 text-xl font-bold text-app-text'>{tool.title}</h3>
+                  <p className='text-app-text-sec text-sm leading-relaxed'>{tool.description}</p>
                 </motion.div>
             ))}
         </motion.div>

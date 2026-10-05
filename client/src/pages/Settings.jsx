@@ -14,9 +14,7 @@ const Settings = () => {
   const tabs = [
     { id: 'profile', label: 'Profile Settings', icon: User },
     { id: 'billing', label: 'Billing & Plan', icon: CreditCard },
-    { id: 'notifications', label: 'Notifications', icon: Bell },
     { id: 'appearance', label: 'Appearance', icon: Monitor },
-    { id: 'security', label: 'Security', icon: Shield },
   ];
 
   return (
@@ -162,16 +160,7 @@ const Settings = () => {
             </Card>
           )}
 
-          {(activeTab === 'security' || activeTab === 'notifications') && (
-            <Card className="p-6 sm:p-8 flex flex-col items-center justify-center py-20 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 border border-primary/20">
-                {activeTab === 'security' ? <Shield className="w-8 h-8 text-primary" /> : <Bell className="w-8 h-8 text-primary" />}
-              </div>
-              <h2 className="text-xl font-bold text-app-text mb-2">Coming Soon</h2>
-              <p className="text-app-text-sec text-sm max-w-sm">This section is currently under development. Check back later for updates.</p>
-            </Card>
-          )}
-          
+
           {/* Global Actions */}
           <div className="mt-8 pt-8 border-t border-app-border">
              <button onClick={signOut} className="flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors font-medium px-4 py-2 hover:bg-red-500/10 rounded-lg">

@@ -10,8 +10,8 @@ const Footer = () => {
     <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-app-border pb-12 relative z-10">
         <div className="md:max-w-96">
             <div className='flex items-center gap-2'>
-              <img className="h-10" src={assets.logo} alt="logo" style={{ filter: 'brightness(0) invert(1)' }}/>
-              <span className="text-xl font-bold tracking-widest text-app-text hidden sm:block">IntelliSuite <span className="text-[#A78BFA]">AI</span></span>
+              <img className="h-10 brightness-0 dark:invert" src={assets.logo} alt="logo" />
+              <span className="text-xl font-bold tracking-widest text-app-text hidden sm:block">IntelliSuite <span className="text-primary">AI</span></span>
             </div>
             <p className="mt-6 text-sm leading-relaxed text-app-text-sec">
                 Experience the power of AI with IntelliSuite AI. <br/>Transform your content creation with our suite of premium AI tools. Write articles, generate images, and enhance your workflow.

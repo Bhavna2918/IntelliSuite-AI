@@ -18,8 +18,8 @@ const Navbar = () => {
       className='fixed top-0 left-0 right-0 z-50 w-full bg-app-bg/80 backdrop-blur-md border-b border-app-border flex justify-between items-center py-4 px-4 sm:px-10 lg:px-20 xl:px-32 transition-colors'
     >
         <motion.div whileHover={{ scale: 1.05 }} className='cursor-pointer flex items-center gap-2' onClick={()=>navigate('/')}>
-           <img src={assets.logo} alt="logo" className='w-8 h-8' style={{ filter: 'brightness(0) invert(1)' }}/>
-           <span className="text-xl font-bold tracking-widest text-app-text hidden sm:block">IntelliSuite <span className="text-[#A78BFA]">AI</span></span>
+           <img src={assets.logo} alt="logo" className='w-8 h-8 brightness-0 dark:invert' />
+           <span className="text-xl font-bold tracking-widest text-app-text hidden sm:block">IntelliSuite <span className="text-primary">AI</span></span>
         </motion.div>
 
        {

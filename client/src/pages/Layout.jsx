@@ -81,10 +81,10 @@ const Layout = () => {
 
                     <div onClick={openUserProfile} className='flex items-center gap-3 cursor-pointer group pl-2'>
                         <div className='text-right hidden md:flex flex-col items-end'>
-                            <span className='text-sm font-semibold text-white group-hover:text-primary transition-colors leading-tight'>
+                            <span className='text-sm font-semibold text-app-text group-hover:text-primary transition-colors leading-tight'>
                                 {user.firstName || user.fullName}
                             </span>
-                            <span className="text-[10px] font-medium text-purple-300 bg-purple-500/20 px-2 py-0.5 rounded mt-0.5 border border-purple-500/30">
+                            <span className="text-[10px] font-medium text-purple-600 dark:text-purple-300 bg-purple-500/10 dark:bg-purple-500/20 px-2 py-0.5 rounded mt-0.5 border border-purple-500/20 dark:border-purple-500/30">
                                 Premium
                             </span>
                         </div>

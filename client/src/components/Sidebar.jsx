@@ -60,7 +60,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
           <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center border border-primary/20">
              <Brain className="w-5 h-5 text-primary" />
           </div>
-          <span className="text-xl font-bold tracking-wide text-white">
+          <span className="text-xl font-bold tracking-wide text-app-text">
             IntelliSuite <span className="text-primary text-base">AI</span>
           </span>
         </div>
@@ -80,7 +80,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
                   to={to}
                   end={to === '/ai'}
                   onClick={() => setSidebar(false)}
-                  className={({ isActive }) => `px-4 py-2.5 flex items-center gap-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-primary/15 text-primary font-semibold shadow-[0_0_15px_rgba(79,140,255,0.3)] border border-primary/30' : 'text-app-text-sec hover:text-white hover:bg-white/5'}`}
+                  className={({ isActive }) => `px-4 py-2.5 flex items-center gap-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-primary/15 text-primary font-semibold shadow-[0_0_15px_rgba(79,140,255,0.3)] border border-primary/30' : 'text-app-text-sec hover:text-app-text hover:bg-black/5 dark:hover:bg-white/5'}`}
                 >
                   <Icon className="w-5 h-5" />
                   <span className="text-sm">{label}</span>
@@ -98,13 +98,13 @@ const Sidebar = ({ sidebar, setSidebar }) => {
               key={to}
               to={to}
               onClick={() => setSidebar(false)}
-              className={({ isActive }) => `px-4 py-2.5 flex items-center gap-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-primary/15 text-primary font-semibold shadow-[0_0_15px_rgba(79,140,255,0.3)] border border-primary/30' : 'text-app-text-sec hover:text-white hover:bg-white/5'}`}
+              className={({ isActive }) => `px-4 py-2.5 flex items-center gap-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-primary/15 text-primary font-semibold shadow-[0_0_15px_rgba(79,140,255,0.3)] border border-primary/30' : 'text-app-text-sec hover:text-app-text hover:bg-black/5 dark:hover:bg-white/5'}`}
             >
               <Icon className="w-5 h-5" />
               <span className="text-sm">{label}</span>
             </NavLink>
           ))}
-          <div className='px-4 py-2.5 flex items-center gap-3 rounded-xl cursor-pointer hover:bg-white/5 transition-colors text-app-text-sec hover:text-white mt-1' onClick={signOut}>
+          <div className='px-4 py-2.5 flex items-center gap-3 rounded-xl cursor-pointer hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-app-text-sec hover:text-app-text mt-1' onClick={signOut}>
             <LogOut className='w-5 h-5' />
             <span className='text-sm font-medium'>Log out</span>
           </div>
