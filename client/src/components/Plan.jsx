@@ -7,7 +7,7 @@ import { useAuth } from '@clerk/clerk-react';
 const plans = [
   {
     name: 'Free',
-    price: '$0',
+    price: '₹0',
     duration: 'forever',
     description: 'Perfect for exploring AI capabilities.',
     features: ['10 AI Generations/mo', 'Standard Support', 'Basic Templates', 'Watermarked Outputs'],
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: 'Pro',
-    price: '$15',
+    price: '₹1499',
     duration: 'per month',
     description: 'For creators who need more power.',
     features: ['250 AI Generations/mo', 'Priority Support', 'Premium Templates', 'No Watermarks', 'Advanced Formatting'],
@@ -34,7 +34,7 @@ const plans = [
   },
   {
     name: 'Premium',
-    price: '$49',
+    price: '₹4999',
     duration: 'per month',
     description: 'Unlimited access for heavy users.',
     features: ['Unlimited Generations', '24/7 Dedicated Support', 'Custom AI Models', 'API Access', 'Team Collaboration'],
